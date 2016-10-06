@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu Sep 29 17:45:58 CST 2016
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=true
+jarname=EyeLife1.jar
+manifest.mergeall=true
+manifest.mainclass=start.MyRecord
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

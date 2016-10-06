@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: lib/httpclient-4.3.3.jar lib/httpcore-4.3.2.jar
+Sealed: true
+
