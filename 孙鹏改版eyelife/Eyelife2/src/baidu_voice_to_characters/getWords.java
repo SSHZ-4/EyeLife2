@@ -79,10 +79,14 @@ public class getWords {
 		String result = printResponse(conn);
 
 		JSONObject jsonObject = new JSONObject(result);
-		Object a = jsonObject.get("result");
+		Object a = null;
+		try {
+			a = jsonObject.get("result");
+		} catch (Exception e) {
+			result = "";
+		}
 		result = a.toString();
 		return result;
-		// return a.toString().replaceAll("]", "").replaceAll("\"", "");
 	}
 
 	private static String printResponse(HttpURLConnection conn)

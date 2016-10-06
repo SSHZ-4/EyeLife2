@@ -25,9 +25,9 @@ public class MyRecord
 		////BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		//br.readLine();
 		MyRecord mr = new MyRecord();
-		System.out.println("start recording...");
+		//System.out.println("start recording...");
 		mr.capture();
-		System.out.println("end recording...");
+		//System.out.println("end recording...");
 		long trans1=System.currentTimeMillis();
 		mr.stopflag = true;
 		mr.save("zhangxu.mp3");
@@ -35,9 +35,9 @@ public class MyRecord
 		String sourceWords = s.listen("zhangxu.mp3");		
 		sourceWords = sourceWords.replace("[", "").replace("\"", "").replace("，","").replace("]", "");
 		long trans2=System.currentTimeMillis();
-		System.out.println("录音文件转成文字共计时间:"+(trans2 - trans1)+"ms");		
+		//System.out.println("录音文件转成文字共计时间:"+(trans2 - trans1)+"ms");		
 		String resultNumber = checkKeyWords(sourceWords);	
-		System.out.println(Integer.parseInt(resultNumber));		
+		System.out.print(resultNumber);	
 	}
 
 	
